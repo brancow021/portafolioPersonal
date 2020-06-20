@@ -1,38 +1,303 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+	background-color: #eee;
+	scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.navbar-principal{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+	background-color: rgba(38, 38, 39 , 80%);
+	position: fixed;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-principal ul{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: start;
+	margin-left: 30px;
+	opacity: 1;
+
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-principal ul a{
+	display: flex;
+	list-style: none;	
+	width: 100px;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-decoration: none;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-principal ul a:hover{
+	background-color: #262627;
+	
 }
+
+.btn-portafolio{
+	display: flex;
+	width: 130px;
+	height: 75%;
+	text-decoration: none;
+	margin-right: 20px;
+	border-radius: 4px;
+	background-color: white;
+	color: black;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-portafolio:hover{
+	opacity: 0.96;
+	border: 1px solid white ;
+}
+
+
+.logo-navbar{
+	margin-left: 30px;
+	font-family: 'Staatliches', cursive;
+	font-size: 30px;
+	color: #eee;
+	width: 160px;
+}
+
+.logo-navbar:hover{
+	cursor: pointer;
+	opacity: 0.9;
+	font-size: 33px;
+}
+
+i{
+	padding-right: 5px;
+	display: inline;
+}
+
+.header{
+	display: flex;
+	width: 100%;
+	height: 650px;
+	background-image: url("https://1.bp.blogspot.com/-5Wd72h4SVCo/Uh8KM6t0bEI/AAAAAAAAKAM/Jogtn4dnVxA/s1600/Fondos+Wallpaper+Gratis+Abstractos+(474).Jpg");
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer{
+	display: flex;
+	background-color: #1F1F1F;
+	color: white;
+	height: 40px;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+
+.header-presentacion h2, em{
+	display: block;
+	font-size: 35px;
+	text-align: center;
+	color: #eee;
+	font-size: xx-large;
+	font-family: 'Bebas Neue';
+	font-size: 50px;
+}
+
+.header-presentacion{
+	background-color: rgba(38, 38, 39 , 30%);
+ 	padding: 30px 30px 40px 40px;
+	border-radius: 5px;
+}
+
+.container{
+	width: auto;
+	height: auto;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 20px;
+	background-color: white;
+	border: 1px solid #eee;
+	border-radius: 7px;
+}
+
+.container{
+	height: auto;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 20px;
+	background-color: white;
+	border: 1px solid #eee;
+	border-radius: 7px;
+}
+
+.subtitulos{
+	display: flex;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: #1F1F1F;
+	font-size: xx-large;
+	padding-top: 10px;
+	justify-content: center;
+	text-transform: uppercase;
+	color: #1068A2;
+
+}
+
+.sobre-mi{
+	width: 80%;
+	height: auto;
+	padding: 40px 40px 20px 40px;
+	border: 1px solid #eee;
+	margin-left: 20px;
+}
+
+.sobre-mi p{
+	text-align: justify;
+}
+
+.sobre-mi h3{
+	padding-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 5px 5px 10px 10px;
+	width: auto;
+	background-color:#eee;
+	color: #eee;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background-color: #0E87D6;
+}
+
+.informacion{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 10px;
+		grid-auto-rows: minmax(100px, auto);
+		background-color: white;
+		
+
+}
+
+
+.card-portafolio{
+	display: grid;
+	margin-top: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	grid-auto-rows: minmax(30%, auto);
+	
+}
+
+.card-portafolio img{
+	width: 100%;
+}
+
+.card{
+	display: flex;
+	width: 90%;
+	margin-bottom: 20px;
+	border: 1px solid #eee;
+	height: auto;
+	padding: 0 0 20px 0 ;
+	flex-wrap: wrap;
+	margin: 0;
+	justify-content: center;
+	border-radius: 5px;
+	margin-left: 15px;
+	margin-right: 10px;
+	
+}
+
+.card img{
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+
+.nombre-proyecto{
+	text-transform: uppercase;
+	color: #0E87D6;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.card-descripcion{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.card-descripcion p {
+	text-align: justify;
+	text-transform: capitalize;
+}
+
+.btn-visitar{
+	width: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 50px;
+	height: 27px;
+	background-color: #0E87D6;
+	color: white;
+	border: none;
+	border-radius: 4px;
+}
+
+.btn-visitar:hover{
+	opacity: 0.9;
+	cursor: pointer;
+}
+
+.formulario{
+
+	margin-bottom: 40px;
+}
+
+.formulario-contacto{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.formulario-contacto div input{
+	width: 800px;
+	margin-bottom: 30px;
+	padding: 10px 20px 10px 20px;
+}
+
+hr{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background-color: #eee;
+}
+label{
+	display: block;
+	margin-bottom: 10px;
+}
+
+textarea{
+	width: 800px;
+	margin-bottom: 30px;
+	padding: 10px 20px 10px 20px;
+}
+
+
+
+
+
